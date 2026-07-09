@@ -3,7 +3,7 @@
 밸류에이티브(Valueative)의 판매형 랜딩사이트. 정리되지 않은 부동산·사업 자료를
 보여줄 수 있는 제안서·소개자료·랜딩페이지로 제작해주는 문서·자료 제작 서비스를 소개한다.
 
-- **도메인**: https://valueative.shop
+- **도메인**: https://www.valueative.shop
 - **호스팅**: GitHub Pages (`.github/workflows/deploy.yml` — `src/` 를 배포)
 - **정본 소스**: [`src/`](src/) — 정적 HTML/CSS/JS (프레임워크·빌드 없음)
 
