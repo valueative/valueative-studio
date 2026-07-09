@@ -1,0 +1,30 @@
+# OS / 편집기
+.DS_Store
+Thumbs.db
+
+# 도구
+.playwright-mcp/
+node_modules/
+*.log
+
+# 비밀정보 (커밋 금지)
+.env
+.env.*
+
+# 빌드 산출물 (배포는 Actions가 src/에서 수행)
+dist/
+
+# 디자인 목업 스크린샷 (사이트 미참조)
+valueative-*.png
+*-desktop.png
+*-mobile*.png
+
+# 루트의 stale 사이트 사본 — 정본은 src/ (CLAUDE.md · PROJECT.md)
+/index.html
+/css/
+/js/
+/assets/
+
+# 내부 기획·운영 문서 (Public 저장소 미포함 — 가격·광고·CPA·운영지침 비공개)
+/0[0-9]_*.md
+/CLAUDE.md
