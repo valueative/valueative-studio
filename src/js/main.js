@@ -89,3 +89,61 @@ document.querySelectorAll(".faq-item").forEach((item) => {
     });
   }
 })();
+
+// 포트폴리오 팝업(모달) — 카드 클릭 시 전체 페이지를 오버레이로 표시
+(function () {
+  var DATA = {
+    "pf-business-plan": { title: "부동산 개발 PF 사업계획서", pages: 60 },
+    "market-research": { title: "공동주택 분양가 시장조사 보고서", pages: 10 },
+    "smartfarm-proposal": { title: "스마트팜 사업 제안서", pages: 14 },
+    "investment-im": { title: "투자 유치 IM (투자설명서)", pages: 14 },
+    "product-review": { title: "제품 검토·신규 기획 자료", pages: 15 },
+    "website-intro": { title: "홈페이지·브랜드 소개자료", pages: 49 },
+    "smgm-proposal": { title: "통합 사업 제안서", pages: 25 },
+    "smgm-catalog": { title: "제품 카탈로그", pages: 28 },
+  };
+  var modal = document.getElementById("pfModal");
+  if (!modal) return;
+  var grid = document.getElementById("pfModalGrid");
+  var titleEl = document.getElementById("pfModalTitle");
+
+  function openModal(slug) {
+    var d = DATA[slug];
+    if (!d) return;
+    titleEl.textContent = d.title;
+    var html = "";
+    for (var i = 1; i <= d.pages; i++) {
+      var n = (i < 10 ? "0" : "") + i;
+      html +=
+        '<figure class="pf-pg"><img src="/assets/portfolio/pages/' + slug + "/p" + n +
+        '.jpg" alt="' + d.title + " " + i + '페이지" loading="lazy">' +
+        '<figcaption>' + i + " / " + d.pages + "</figcaption></figure>";
+    }
+    grid.innerHTML = html;
+    grid.scrollTop = 0;
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("pf-locked");
+    if (window.vsTrack) window.vsTrack("view_sample", { sample: slug });
+  }
+
+  function closeModal() {
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("pf-locked");
+    grid.innerHTML = "";
+  }
+
+  document.querySelectorAll(".portfolio-visual-link[data-portfolio]").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      openModal(a.getAttribute("data-portfolio"));
+    });
+  });
+  modal.querySelectorAll("[data-pf-close]").forEach(function (el) {
+    el.addEventListener("click", closeModal);
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && modal.classList.contains("is-open")) closeModal();
+  });
+})();
