@@ -922,6 +922,8 @@ li {
 .price-card:nth-child(3) { transition-delay: 0.2s; }
 .portfolio-card:nth-child(4),
 .price-card:nth-child(4) { transition-delay: 0.28s; }
+.portfolio-card:nth-child(5) { transition-delay: 0.36s; }
+.portfolio-card:nth-child(6) { transition-delay: 0.44s; }
 
 @keyframes floatGlow {
   from {
