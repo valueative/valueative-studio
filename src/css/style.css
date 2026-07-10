@@ -33,6 +33,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Noto Sans KR", "Segoe UI", sans-serif;
   letter-spacing: 0;
   line-height: 1.6;
+  /* 한글이 단어 중간에서 끊기지 않도록 공백 단위로만 줄바꿈 */
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
 }
 
 body::before {
