@@ -714,6 +714,30 @@ li {
 .portfolio-visual-link {
   display: block;
   cursor: pointer;
+  position: relative;
+}
+
+.portfolio-hint {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translate(-50%, 8px);
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: rgba(11, 13, 16, 0.82);
+  color: #f7f4ee;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.28s ease, transform 0.28s ease;
+  pointer-events: none;
+}
+
+.portfolio-card:hover .portfolio-hint {
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
 
 .portfolio-body {
@@ -924,6 +948,9 @@ li {
 .price-card:nth-child(4) { transition-delay: 0.28s; }
 .portfolio-card:nth-child(5) { transition-delay: 0.36s; }
 .portfolio-card:nth-child(6) { transition-delay: 0.44s; }
+.portfolio-card:nth-child(7) { transition-delay: 0.52s; }
+.portfolio-card:nth-child(8) { transition-delay: 0.6s; }
+.portfolio-card:nth-child(9) { transition-delay: 0.68s; }
 
 @keyframes floatGlow {
   from {
