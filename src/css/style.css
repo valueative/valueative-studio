@@ -308,6 +308,98 @@ li {
   min-height: 520px;
 }
 
+/* 히어로 Living Wall (2행 대향 스크롤) */
+.hero-wall {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 11%, #000 89%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 11%, #000 89%, transparent);
+}
+
+.wall-row {
+  overflow: visible;
+}
+
+.wall-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.wall-row-a .wall-track {
+  animation: wallScrollA 48s linear infinite;
+}
+
+.wall-row-b .wall-track {
+  animation: wallScrollB 56s linear infinite;
+}
+
+@keyframes wallScrollA {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes wallScrollB {
+  from { transform: translate3d(-50%, 0, 0); }
+  to { transform: translate3d(0, 0, 0); }
+}
+
+.hero-wall:hover .wall-track {
+  animation-play-state: paused;
+}
+
+.wall-card {
+  flex: none;
+  width: 136px;
+  height: 182px;
+  margin-right: 16px;
+  border-radius: 13px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(11, 13, 16, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+.wall-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.wall-card:hover {
+  transform: translateY(-6px) scale(1.045);
+  box-shadow: 0 22px 46px rgba(11, 13, 16, 0.3);
+}
+
+.wall-caption {
+  margin: 4px 0 0;
+  text-align: center;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0.02em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wall-row-a .wall-track,
+  .wall-row-b .wall-track {
+    animation: none;
+  }
+  .hero-wall {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .wall-row {
+    overflow: hidden;
+  }
+}
+
 .document-card {
   position: absolute;
   border: 1px solid rgba(255, 255, 255, 0.14);

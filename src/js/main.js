@@ -134,7 +134,7 @@ document.querySelectorAll(".faq-item").forEach((item) => {
     grid.innerHTML = "";
   }
 
-  document.querySelectorAll(".portfolio-visual-link[data-portfolio]").forEach(function (a) {
+  document.querySelectorAll("[data-portfolio]").forEach(function (a) {
     a.addEventListener("click", function (e) {
       e.preventDefault();
       openModal(a.getAttribute("data-portfolio"));
