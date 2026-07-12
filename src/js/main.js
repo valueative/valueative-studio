@@ -59,10 +59,23 @@ document.querySelectorAll(".faq-item").forEach((item) => {
     });
   });
 
-  // 섹션 조회 추적: 가격표 / 포트폴리오 (1회)
+  // 외부 링크 클릭 추적 (가늠 크로스 등)
+  document.querySelectorAll("[data-track]").forEach((el) => {
+    el.addEventListener("click", () => {
+      if (window.vsTrack) {
+        window.vsTrack(el.dataset.track, {});
+      }
+    });
+  });
+
+  // 섹션 조회 추적 (1회)
   const sectionEvents = [
-    { id: "pricing", name: "view_pricing" },
+    { id: "why", name: "view_why" },
+    { id: "deliverables", name: "view_deliverables" },
     { id: "portfolio", name: "view_portfolio" },
+    { id: "fit", name: "view_fit" },
+    { id: "pricing", name: "view_pricing" },
+    { id: "prepared", name: "view_prepared" },
   ];
   if ("IntersectionObserver" in window) {
     const seen = {};

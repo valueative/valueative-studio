@@ -26,7 +26,7 @@
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23c8a45d'/%3E%3Cpath d='M18 16h9l6 27 6-27h8L38 48H28L18 16z' fill='%230b0d10'/%3E%3C/svg%3E"
     >
-    <link rel="stylesheet" href="/css/style.css?v=20260710-3">
+    <link rel="stylesheet" href="/css/style.css?v=20260712-1">
     <!-- 전환 추적 설정: 배포 전 아래 3개 값을 실제 ID로 교체 (미교체 시 자동 비활성) -->
     <script>
       window.VS_CONFIG = {
@@ -73,11 +73,12 @@
         <span>Valueative Studio</span>
       </a>
       <nav class="nav-links" aria-label="섹션 이동">
-        <a href="#service">서비스</a>
+        <a href="#why">왜 의뢰인가</a>
+        <a href="#deliverables">받는 것</a>
         <a href="#portfolio">샘플</a>
         <a href="#pricing">가격</a>
-        <a href="#contact">문의</a>
       </nav>
+      <a class="btn btn-primary btn-sm header-cta js-kakao" href="#" data-cta="header">카카오톡 상담</a>
     </header>
 
     <main>
@@ -87,20 +88,20 @@
           <div class="hero-copy">
             <p class="eyebrow blur-in">실무형 자료 제작 스튜디오</p>
             <h1 class="hero-title">
-              <span>누군가에게</span>
-              <span>보여줄 자료,</span>
-              <span>이제는 제대로</span>
-              <span>정리하세요.</span>
+              <span class="quiet">부탁 말고,</span>
+              <span>의뢰하세요.</span>
             </h1>
             <p class="hero-lead">
-              사진 몇 장, 메모 몇 줄, 흩어진 기존 자료만 있어도 괜찮습니다.
-              부동산·사업 아이디어를 제안서, 소개자료, 홈페이지 형태로 보기 좋게 만들어드립니다.
+              사진 몇 장, 메모 몇 줄이면 시작할 수 있습니다.<br>
+              부탁하면 언젠가는 나옵니다.<br>
+              기한도, 수정도, 퀄리티도 <b>요구할 수 없을 뿐</b>입니다.<br>
+              의뢰는 다릅니다 — 기한을 약속하고, <b class="num">수정 1~2회</b>를 계약에 포함합니다.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#portfolio">제작 샘플 보기</a>
-              <a class="btn btn-secondary" href="#contact">상담 문의하기</a>
+              <a class="btn btn-primary" href="#deliverables">받게 될 결과물 보기</a>
+              <a class="btn btn-secondary js-kakao" href="#" data-cta="hero">카카오톡 상담</a>
             </div>
-            <p class="hero-note">전문 컨설팅이 부담스러운 분들을 위한 실무형 자료 제작 서비스</p>
+            <p class="hero-note">제안서 · 소개자료 · 홈페이지 — 부동산·사업 자료 전문</p>
           </div>
 
           <div class="hero-showcase hero-wall scale-in" aria-label="실제 제작 샘플 모음">
@@ -111,81 +112,98 @@
         </div>
       </section>
 
-      <section class="section problem" id="problem">
+      <section class="section why" id="why">
         <div class="container">
           <div class="section-heading reveal">
-            <p class="eyebrow">Problem</p>
-            <h2>자료는 있는데,<br>보여주기 어렵다면.</h2>
+            <p class="eyebrow">Why</p>
+            <h2>부탁해도 됩니다.<br><span class="quiet-ink">가장 느린 방법일 뿐입니다.</span></h2>
             <p>
-              아이디어는 있지만 정리가 안 되어 있거나, 사진과 메모는 있지만 상대방에게 보여줄 형태가 아닐 때가 있습니다.
-              이해하기 쉬운 구조와 보기 좋은 디자인으로 다시 정리합니다.
+              주변에 만들어줄 사람이 있는 분들이 오히려 많이 찾아오십니다.<br>
+              공짜의 값을 치러봤기 때문입니다.
             </p>
           </div>
-          <div class="problem-grid">
-            <article class="problem-card reveal">
-              <span class="card-number">01</span>
-              <h3>말로는 설명되는데 문서가 없다</h3>
-              <p>사업 구상, 매물 설명, 토지 활용 아이디어를 상대방이 이해할 수 있는 문서로 정리합니다.</p>
+          <div class="cmp-grid">
+            <article class="cmp cmp-ask reveal">
+              <span class="cmp-label">부탁하면</span>
+              <dl>
+                <div><dt>기한</dt><dd>상대의 일정이 먼저입니다.<br>내 미팅은 그다음입니다.</dd></div>
+                <div><dt>수정</dt><dd>두 번째 부탁은 꺼내기 어렵습니다.<br>받은 대로 씁니다.</dd></div>
+                <div><dt>퀄리티</dt><dd>아쉬워도 고맙다고 해야 합니다.</dd></div>
+                <div><dt>비용</dt><dd>무료.<br>대신 기다린 시간과 미뤄진 미팅이 값을 치릅니다.</dd></div>
+              </dl>
             </article>
-            <article class="problem-card reveal">
-              <span class="card-number">02</span>
-              <h3>기존 자료가 허술해 보인다</h3>
-              <p>흩어진 문장, 사진, 표, 메모를 깔끔한 제안서와 소개자료로 재구성합니다.</p>
-            </article>
-            <article class="problem-card reveal">
-              <span class="card-number">03</span>
-              <h3>전문 업체 비용은 부담스럽다</h3>
-              <p>정밀 컨설팅이 아닌, 보여주기 위한 실무형 자료 제작에 집중합니다.</p>
-            </article>
-            <article class="problem-card reveal">
-              <span class="card-number">04</span>
-              <h3>홈페이지도 필요하지만 막막하다</h3>
-              <p>메뉴 구성, 문구, 화면 구조부터 간단한 랜딩페이지 제작까지 도와드립니다.</p>
+            <article class="cmp cmp-hire reveal">
+              <span class="cmp-label">의뢰하면</span>
+              <dl>
+                <div><dt>기한</dt><dd>시작 전에 <b>날짜로</b> 약속합니다.</dd></div>
+                <div><dt>수정</dt><dd><b class="num">1~2회가 계약에 있습니다.</b><br>요구는 권리입니다.</dd></div>
+                <div><dt>퀄리티</dt><dd>구성안을 먼저 확인하고 시작합니다.<br>방향이 다르면 그때 바꿉니다.</dd></div>
+                <div><dt>비용</dt><dd><b class="num">15만 원부터.</b><br>시작 전에 확정합니다.</dd></div>
+              </dl>
             </article>
           </div>
+          <p class="cmp-statement reveal"><em>시간이 돈</em>인 분들을 위해 만들었습니다.</p>
         </div>
       </section>
 
-      <section class="section service" id="service">
+      <section class="section deliverables" id="deliverables">
         <div class="container">
-          <div class="section-heading center reveal">
-            <p class="eyebrow">Service</p>
-            <h2>보여줄 수 있는 형태로,<br>처음부터 끝까지.</h2>
+          <div class="section-heading reveal">
+            <p class="eyebrow">Deliverables</p>
+            <h2>의뢰 한 번으로<br>받는 것.</h2>
+            <p>
+              말이 아니라 실물로 먼저 보여드립니다.<br>
+              어떤 플랜이든, 아래 네 가지가 기본입니다.
+            </p>
           </div>
-          <div class="service-grid">
-            <article class="service-card reveal">
-              <div class="service-icon">PDF</div>
-              <h3>제안서·소개자료 제작</h3>
-              <p>부동산 매물, 사업 구상, 회사·단체 소개자료를 PPT 또는 PDF 형태로 제작합니다.</p>
-              <ul>
-                <li>목차 구성</li>
-                <li>문장 정리</li>
-                <li>표·도식 구성</li>
-                <li>PDF 납품</li>
-              </ul>
-            </article>
-            <article class="service-card featured reveal">
-              <div class="service-icon">SITE</div>
-              <h3>부동산 자료 정리</h3>
-              <p>토지, 건물, 매물, 개발 아이디어를 상대방이 이해할 수 있는 흐름으로 정리합니다.</p>
-              <ul>
-                <li>대상지 개요</li>
-                <li>입지 포인트</li>
-                <li>활용 가능성</li>
-                <li>제안 결론</li>
-              </ul>
-            </article>
-            <article class="service-card reveal">
-              <div class="service-icon">WEB</div>
-              <h3>홈페이지 기획·랜딩페이지</h3>
-              <p>프로젝트를 소개할 수 있는 웹페이지의 구성과 문구를 만들고 간단한 화면까지 제작합니다.</p>
-              <ul>
-                <li>메뉴 구조</li>
-                <li>메인 카피</li>
-                <li>섹션 구성</li>
-                <li>정적 페이지</li>
-              </ul>
-            </article>
+          <div class="dlv">
+            <div class="dlv-stage scale-in" aria-label="실제 제작 문서 미리보기">
+              <img class="dlv-pg dlv-back" src="/assets/portfolio/pages/market-research/p01.jpg" alt="" loading="lazy">
+              <img class="dlv-pg dlv-mid" src="/assets/portfolio/pages/investment-im/p01.jpg" alt="" loading="lazy">
+              <img class="dlv-pg dlv-front" src="/assets/portfolio/pages/pf-business-plan/p01.jpg" alt="실제 제작한 사업계획서 표지" loading="lazy">
+            </div>
+            <div class="dlv-list reveal">
+              <div class="dlv-item">
+                <span class="dlv-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1971c2" stroke-width="1.8" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><line x1="9" y1="12" x2="16" y2="12"/><line x1="9" y1="16" x2="14" y2="16"/></svg>
+                </span>
+                <div>
+                  <h3>완성 문서</h3>
+                  <p>인쇄 가능한 해상도의 PDF.<br>미팅·제출·플랫폼 어디에든 바로 쓸 수 있습니다.</p>
+                </div>
+              </div>
+              <div class="dlv-item">
+                <span class="dlv-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1971c2" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg>
+                </span>
+                <div>
+                  <h3>편집 원본</h3>
+                  <p>플랜에 따라 PPT 또는 HTML 원본을 함께 드립니다.<br>이후 직접 고칠 수 있습니다.</p>
+                </div>
+              </div>
+              <div class="dlv-item">
+                <span class="dlv-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1971c2" stroke-width="1.8" stroke-linecap="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="15" y2="12"/><line x1="4" y1="18" x2="18" y2="18"/></svg>
+                </span>
+                <div>
+                  <h3>구성안</h3>
+                  <p>제작 전에 목차와 흐름을 1페이지로 먼저 확인하고 시작합니다.</p>
+                </div>
+              </div>
+              <div class="dlv-item">
+                <span class="dlv-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1971c2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.3 5.6"/><path d="M20 5v6h-6"/></svg>
+                </span>
+                <div>
+                  <h3>수정 반영</h3>
+                  <p>플랜별 1~2회, 문구·순서·강조점을 함께 다듬습니다.<br>요구하셔도 됩니다 — 그러라고 있는 계약입니다.</p>
+                </div>
+              </div>
+              <div class="chips" aria-label="납품 형식">
+                <span>.pdf</span><span>.pptx</span><span>.html</span><span>인쇄용 고해상도</span>
+              </div>
+              <p class="fine">모든 자료의 수치는 제공해주신 자료와 공개 출처만 사용합니다.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -196,7 +214,7 @@
             <p class="eyebrow">Before / After</p>
             <h2>흩어진 자료가,<br>보여줄 수 있는 결과물로.</h2>
             <p>
-              길게 정리된 원고가 없어도 괜찮습니다.
+              길게 정리된 원고가 없어도 괜찮습니다.<br>
               몇 줄의 설명, 현장 사진, 오래된 파일을 목적에 맞는 자료로 다시 구성합니다.
             </p>
           </div>
@@ -392,20 +410,39 @@
         </div>
       </section>
 
-      <section class="section process" id="process">
+      <section class="section fit" id="fit">
         <div class="container">
           <div class="section-heading reveal">
-            <p class="eyebrow">Process</p>
-            <h2>복잡하지 않게,<br>자료 전달부터 납품까지.</h2>
+            <p class="eyebrow">Fit</p>
+            <h2>지금 어떤 상황이신가요.</h2>
+            <p>
+              세 가지 경우가 가장 많습니다.<br>
+              내 경우를 고르면 받는 것과 시작 가격이 바로 보입니다.
+            </p>
           </div>
-          <ol class="process-list">
-            <li class="reveal"><strong>자료 전달</strong><span>사진, 메모, 기존 문서, 설명을 보내주세요.</span></li>
-            <li class="reveal"><strong>방향 정리</strong><span>누구에게 보여줄 자료인지, 어떤 목적의 자료인지 확인합니다.</span></li>
-            <li class="reveal"><strong>구성안 작성</strong><span>목차와 흐름을 정리하고, 필요한 내용을 재배치합니다.</span></li>
-            <li class="reveal"><strong>초안 제작</strong><span>PPT, PDF, 홈페이지 초안을 제작합니다.</span></li>
-            <li class="reveal"><strong>수정 반영</strong><span>문구, 순서, 강조점 등 1차 수정을 반영합니다.</span></li>
-            <li class="reveal"><strong>최종 납품</strong><span>PDF, PPT, HTML 등 약속된 형식으로 전달합니다.</span></li>
-          </ol>
+          <div class="fit-grid">
+            <article class="fit-card reveal">
+              <span class="fit-role">중개사 · 토지주</span>
+              <h3>매물을 설명해야 한다면</h3>
+              <p class="fit-get"><b>매물 소개서</b>를 받습니다.<br>개요·입지·활용 방향을 정리한 PDF — 매수인의 관심이 식기 전에 카톡으로 바로 보냅니다.</p>
+              <div class="fit-price num"><strong>15만 원</strong><small>부터 · 약 3일</small></div>
+              <a class="fit-link" href="#portfolio">제작 샘플 보기 &rarr;</a>
+            </article>
+            <article class="fit-card reveal">
+              <span class="fit-role">시행사 · 사업자</span>
+              <h3>투자자 미팅이 잡혔다면</h3>
+              <p class="fit-get"><b>사업계획서 · 투자 IM</b>을 받습니다.<br>미팅 날짜에 맞춰 역산해 진행하고, 사업 구조와 수지를 투자자의 논리로 정리합니다.</p>
+              <div class="fit-price num"><strong>70만 원</strong><small>부터 · 7~14일</small></div>
+              <a class="fit-link" href="/portfolio/pf-business-plan.html" data-portfolio="pf-business-plan">PF 사업계획서 샘플 보기 &rarr;</a>
+            </article>
+            <article class="fit-card reveal">
+              <span class="fit-role">소규모 법인 · 단체</span>
+              <h3>회사 소개자료가 없다면</h3>
+              <p class="fit-get"><b>회사소개서</b>를 받습니다.<br>필요하면 랜딩페이지까지 묶어, 다음 제안과 입찰 전에 문서와 웹을 같은 얼굴로 갖춥니다.</p>
+              <div class="fit-price num"><strong>35만 원</strong><small>부터 · 5~7일</small></div>
+              <a class="fit-link" href="/portfolio/website-intro.html" data-portfolio="website-intro">소개자료 샘플 보기 &rarr;</a>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -418,7 +455,7 @@
           <div class="pricing-grid">
             <article class="price-card reveal">
               <h3>간단 작성</h3>
-              <p class="price">15만 원~</p>
+              <p class="price num">15만 원~</p>
               <p>기존 자료 재구성과 기본 디자인 정리가 필요한 경우</p>
               <ul>
                 <li>8페이지 내외 / 약 3일</li>
@@ -427,11 +464,14 @@
                 <li>PDF 납품</li>
                 <li>수정 1회</li>
               </ul>
+              <div class="price-samples">
+                <a class="fit-link" href="/portfolio/market-research.html" data-portfolio="market-research">시장조사 보고서 샘플 &rarr;</a>
+              </div>
             </article>
             <article class="price-card recommended scale-in">
               <span class="badge">가장 많이 추천</span>
               <h3>중간 작성</h3>
-              <p class="price">35만 원~</p>
+              <p class="price num">35만 원~</p>
               <p>회사소개서, 토지 활용 제안 기초가 필요한 경우</p>
               <ul>
                 <li>10~15페이지 / 5~7일</li>
@@ -440,10 +480,14 @@
                 <li>PPT/PDF 납품</li>
                 <li>수정 2회</li>
               </ul>
+              <div class="price-samples">
+                <a class="fit-link" href="/portfolio/smartfarm-proposal.html" data-portfolio="smartfarm-proposal">사업 제안서 샘플 &rarr;</a>
+                <a class="fit-link" href="/portfolio/product-review.html" data-portfolio="product-review">제품 기획 자료 샘플 &rarr;</a>
+              </div>
             </article>
             <article class="price-card reveal">
               <h3>고급 작성</h3>
-              <p class="price">70만 원~</p>
+              <p class="price num">70만 원~</p>
               <p>투자자·기관 제출용 제안서가 필요한 경우</p>
               <ul>
                 <li>15~25페이지 / 7~14일</li>
@@ -452,10 +496,14 @@
                 <li>PPT/PDF 납품</li>
                 <li>수정 2회</li>
               </ul>
+              <div class="price-samples">
+                <a class="fit-link" href="/portfolio/pf-business-plan.html" data-portfolio="pf-business-plan">PF 사업계획서 샘플 &rarr;</a>
+                <a class="fit-link" href="/portfolio/investment-im.html" data-portfolio="investment-im">투자 유치 IM 샘플 &rarr;</a>
+              </div>
             </article>
             <article class="price-card reveal">
               <h3>풀 패키지</h3>
-              <p class="price">150만 원~</p>
+              <p class="price num">150만 원~</p>
               <p>문서와 웹을 한 번에 갖추고 싶은 경우 (견적)</p>
               <ul>
                 <li>문서 + 랜딩페이지 / 2~4주</li>
@@ -464,9 +512,75 @@
                 <li>인쇄용 PDF 포함</li>
                 <li>범위별 협의</li>
               </ul>
+              <div class="price-samples">
+                <a class="fit-link" href="/portfolio/smgm-proposal.html" data-portfolio="smgm-proposal">통합 사업 제안서 샘플 &rarr;</a>
+                <a class="fit-link" href="/portfolio/smgm-catalog.html" data-portfolio="smgm-catalog">제품 카탈로그 샘플 &rarr;</a>
+                <a class="fit-link" href="/portfolio/website-intro.html" data-portfolio="website-intro">홈페이지·브랜드 소개 샘플 &rarr;</a>
+              </div>
             </article>
           </div>
           <p class="pricing-note reveal">가격은 "~부터" 기준이며, 자료 범위·분량·리서치 필요 여부에 따라 상담에서 확정합니다. 수정 추가와 리서치는 옵션으로 안내드리며, 세금계산서 발행 여부는 상담 시 확인해 드립니다.</p>
+        </div>
+      </section>
+
+      <section class="section principles" id="principles">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Principles</p>
+            <h2>일하는 원칙.</h2>
+            <p>밸류에이티브의 두 제품이 함께 지키는 기준입니다.</p>
+          </div>
+          <div class="prin-grid">
+            <article class="prin reveal">
+              <h3>수치를 만들지 않습니다</h3>
+              <p>제공해주신 자료와 공개 출처에 없는 숫자는 문서에 넣지 않습니다.</p>
+            </article>
+            <article class="prin reveal">
+              <h3>원본까지 드립니다</h3>
+              <p>완성 PDF와 함께, 플랜에 따라 편집 가능한 원본 파일을 납품합니다.</p>
+            </article>
+            <article class="prin reveal">
+              <h3>고객 자료를 보호합니다</h3>
+              <p>포트폴리오 공개는 비식별 처리 후, 동의된 범위에서만 합니다.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section prepared" id="prepared">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Prepared</p>
+            <h2>같은 미팅,<br><span class="quiet-ink">다른 출발점.</span></h2>
+            <p>
+              설계사무소, 지구단위계획 업체, 시공사, 투자자 — 사업은 결국 누군가의 맞은편에 앉는 일입니다.<br>
+              검토 근거와 정리된 문서를 먼저 내미는 사업자는, 그 자리에서 다르게 대접받습니다.
+            </p>
+          </div>
+          <div class="prep-grid">
+            <article class="prep reveal">
+              <span class="prep-label">검토를 갖추고</span>
+              <span class="prep-brand">
+                <svg width="24" height="24" viewBox="0 0 26 26" aria-hidden="true">
+                  <polygon points="4,9 13,3 22,7 20,19 8,22" fill="none" stroke="#1971c2" stroke-width="2.4" stroke-linejoin="round"></polygon>
+                  <circle cx="22" cy="7" r="3" fill="#a9e34b" stroke="#fff" stroke-width="1.2"></circle>
+                </svg>
+                가늠 <span class="en">GANEUM</span>
+              </span>
+              <p>구역계 확정, 토지조서, 입지 스코어, 법규검토 초안.<br>공공데이터 근거를 들고 갑니다.</p>
+              <a class="fit-link" href="https://valueative.com/" target="_blank" rel="noopener" data-track="cross_ganeum">가늠 보기 &rarr;</a>
+            </article>
+            <article class="prep reveal">
+              <span class="prep-label">문서를 갖추고</span>
+              <span class="prep-brand">
+                <span class="brand-mark ink" aria-hidden="true">V</span>
+                Valueative Studio
+              </span>
+              <p>제안서, 투자 IM, 소개자료.<br>구상을 상대가 판단할 수 있는 언어로 정리해 갑니다.</p>
+              <a class="fit-link js-kakao" href="#" data-cta="prepared">의뢰 시작하기 &rarr;</a>
+            </article>
+          </div>
+          <p class="cmp-statement reveal"><em>준비한 쪽</em>이 대화를 이끕니다.</p>
         </div>
       </section>
 
@@ -508,14 +622,14 @@
       <section class="final-cta section-full" id="contact">
         <div class="container final-inner reveal">
           <p class="eyebrow">Start</p>
-          <h2>지금 가진 자료로도,<br>충분히 시작할 수 있습니다.</h2>
+          <h2>누군가에게 보여줄 자료,<br>이제는 제대로.</h2>
           <p>
-            먼저 어떤 자료를 누구에게 보여줄지 알려주세요.
-            목적에 맞는 형태로 정리해드립니다.
+            흩어진 기존 자료만 있어도 괜찮습니다.<br>
+            어떤 자료를 누구에게 보여줄지 알려주시면, 기한과 견적을 먼저 확정해 드립니다.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary dark js-kakao" href="#" data-cta="final-cta">카카오톡으로 상담하기</a>
-            <a class="btn btn-secondary dark" href="#portfolio">제작 샘플 다시 보기</a>
+            <a class="btn btn-primary js-kakao" href="#" data-cta="final-cta">카카오톡으로 시작하기</a>
+            <a class="btn btn-secondary" href="#deliverables">받게 될 결과물 다시 보기</a>
           </div>
         </div>
       </section>
@@ -527,10 +641,15 @@
           <strong>밸류에이티브 스튜디오</strong>
           <span>Valueative Studio</span>
         </div>
-        <p>부동산·사업자료를 제안서, 소개자료, 홈페이지로 정리하는 제작 스튜디오</p>
-        <p class="footer-contact">
-          <a class="js-kakao" href="#" data-cta="footer">카카오톡 상담</a>
-        </p>
+        <p>부동산·사업 자료를 제안서, 소개자료, 홈페이지로 정리하는 제작 스튜디오</p>
+        <div class="footer-family">
+          <b>VALUEATIVE</b>
+          <p class="footer-family-links">
+            <a href="https://valueative.com/" target="_blank" rel="noopener" data-track="cross_ganeum">가늠 — 부동산 개발 검토 도구</a>
+            <a class="js-kakao" href="#" data-cta="footer">카카오톡 상담</a>
+          </p>
+          <p class="footer-copy">© 2026 VALUEATIVE</p>
+        </div>
       </div>
     </footer>
 
@@ -549,11 +668,11 @@
           </div>
           <button class="pf-modal-close" type="button" data-pf-close aria-label="닫기">&#10005;</button>
         </div>
-        <p class="pf-modal-note">🔒 실제 제작한 자료입니다. 고객 정보 보호를 위해 내용은 흐리게 처리했습니다.</p>
+        <p class="pf-modal-note">실제 제작한 자료입니다. 고객 정보 보호를 위해 내용은 흐리게 처리했습니다.</p>
         <div class="pf-modal-grid" id="pfModalGrid"></div>
       </div>
     </div>
 
-    <script src="/js/main.js?v=20260710-3"></script>
+    <script src="/js/main.js?v=20260712-1"></script>
   </body>
 </html>
